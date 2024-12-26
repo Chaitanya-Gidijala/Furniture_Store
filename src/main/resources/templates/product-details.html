@@ -1,0 +1,104 @@
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/index :: head">
+</head>
+<body>
+
+	<nav th:replace="fragments/index :: offer-nav"></nav>
+	<nav th:replace="fragments/index :: navigation"></nav>
+	<hr>
+
+	<div class="container mb-5 mt-5 border border-2 p-5">
+		<div class="row">
+			<div class="col-lg-5 col-sm-12 col-md-12 single-right-left ">
+				<div class="grid images_3_of_2">
+					<div class="flexslider">
+						<div class="thumb-image">
+							<img th:src="${product.productPath}" alt="Skyscrapers"
+								class="w-100 h-100" />
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-7 pt-3">
+				<!-- 1 -->
+				<span th:text="${product.productName}" class="mb-3 fs-4"></span>
+				<div class="product-price">
+					<div class="extraOfferPrice text-success">
+						<span class="extra_offer_price">Extra</span> <b>&#x20B9;</b>
+						<!-- 2 -->
+						<span class="extra_offer_price"
+							th:text="${product.extraOfferPrice}"></span> <span>off</span>
+					</div>
+					<div>
+
+						<b class="item_price">&#x20B9;</b>
+						<!-- 3 -->
+						<span class="item_price" th:text="${product.productPrice}"></span>
+						<span> <span class="original_Price"> <!-- 4 -->
+								&#x20B9;<s th:text="${product.originalPrice}"></s>
+						</span>
+						</span>
+					</div>
+				</div>
+				<div class="w-75 w-sm-100">
+					<!-- 5 -->
+					<span th:text="${product.productDescription}" class="#"> </span>
+				</div>
+				<div class="pt-5">
+					<a class="view_more"
+						th:href="@{'/images/' + ${product.productCategory}}">View More</a>
+					<a class="btn btn-danger" data-bs-toggle="modal"
+						data-bs-target="#exampleModal" style="background-color: #fb641b">Contact
+						Us</a>
+					<form class="pt-5"
+						th:action="@{/addToCart/{productId}(productId=${product.id})}"
+						method="post">
+						<span>Quantity:</span>
+						<input type="number" name="quantity" value="1" min="1" class="cartQuantityInput">
+						<button type="submit" class=" btn text-success btn-outline-warning">Add to Cart</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1"
+		aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title f5 text-success fw-bold "
+						id="exampleModalLabel">Contact Details</h4>
+					<button type="button" class="btn-close" data-bs-dismiss="modal"
+						aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="mode">
+						<div>
+							<b>Name:</b><span>Chaitanya Gidijala</span>
+						</div>
+					</div>
+					<div>
+						<div>
+							<b>Mobile Number: </b><span>+91 7337072766</span>
+						</div>
+					</div>
+					Tankala Duggivalasa - 532168, Srikakaulam District, A.P
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-warning"
+						data-bs-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div th:replace="footer :: footer"></div>
+
+</body>
+</html>

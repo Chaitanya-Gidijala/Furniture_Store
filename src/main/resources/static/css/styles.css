@@ -1,0 +1,267 @@
+ @charset "ISO-8859-1";
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Muli, sans-serif;
+  font-size: 16px;
+}
+
+
+.navbar-brand {
+	font-size: 1.5rem;
+	font-weight: 700;
+	font-family: "Space Mono", monospace;
+	color: #ead61e;
+}
+.navbar-brand:hover{
+	color: #ead61e;
+}
+.nav-link{
+	font-weight: 500;
+	font-size: 18px;
+	color: white;
+}
+.nav-link:hover{
+	color: #FFC300; 
+}
+.dropdown-item{
+	color: #484848;
+	font-weight: 400;
+}
+.dropdown-item:hover{
+	font-weight: 600;
+	color: #FFC300;
+}
+
+
+
+.our_furniture_section{
+	padding-top: 4rem;
+	
+}
+.furniture-items img{
+	height: 3rem;
+}
+.furniture_list{
+	padding: 5rem
+}
+.furniture-items:hover{
+	color: #ff8000;
+	cursor: pointer;
+}
+.item-name{
+	font-size: 0.9rem;
+	font-weight: 500;
+	color: #1F618D;
+	text-decoration: none;
+	font-weight: 600;
+	align-items: center;
+	
+}
+
+.item-name p{
+	font-size: 1.1rem
+}
+.item-name:hover{
+	color: #E67E22;
+	font-weight: 700;	
+}
+.item-name img:hover{
+	transform: scale(1.1);
+}
+
+
+
+
+
+
+ 
+.wrapper {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.container-fostrap {
+  display: table-cell;
+  padding: 1em;
+  text-align: center;
+  vertical-align: middle;
+}
+.fostrap-logo {
+  width: 100px;
+  margin-bottom:15px
+}
+h1.heading {
+  color: #fff;
+  font-size: 1.15em;
+  font-weight: 900;
+  margin: 0 0 0.5em;
+  color: #505050;
+}
+@media (min-width: 450px) {
+  h1.heading {
+    font-size: 3.55em;
+  }
+}
+@media (min-width: 760px) {
+  h1.heading {
+    font-size: 3.05em;
+  }
+}
+@media (min-width: 900px) {
+  h1.heading {
+    font-size: 3.25em;
+    margin: 0 0 0.3em;
+  }
+} 
+.abovecards{
+	padding: 20px
+}
+.image-card {
+  	display: block; 
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12); 
+    transition: box-shadow .25s; 
+}
+.image-card:hover {
+  box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.card-title {
+  margin-top:0px;
+  font-weight: 600;
+  font-size: 1.3em;
+}
+.card-img-top{
+	height: 15rem
+}
+.image-card-body{
+	height: 10rem
+}
+
+.card-fixed-height {
+	height: 3rem;
+    overflow-y: scroll; /* Hide overflow content */
+}
+
+
+
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*start - product details  */
+.extra_offer_price{
+	font-size: 14px;
+	font-weight: 700
+}
+.item_price{
+	font-size: 1.7rem;
+	font-weight: 550;
+}
+.original_Price{
+	font-size: 17px;
+    margin-left: 10px;
+    vertical-align: middle;
+    color: #878787;
+}
+.view_more{
+	color: #1B95EC;
+	padding-right: 20px;
+	text-decoration: none;
+}
+/*end - product details  */
+
+
+
+
+/*start - product details multiple items carousel */
+
+
+/*end - product details multiple items carousel  */
+
+#trophy {
+  transform : translateY(58px)
+}
+
+
+.logout{
+	text-decoration: none;
+	color: #f33c0e;
+	font-weight: 600;
+}
+.logout:hover{
+	color: #0080c0;
+	
+}
+
+
+
+.footer-heading:hover{
+	color: #ead61e;
+	cursor: pointer;
+	
+}
+.widget-title{
+	color: #ead61e;
+	font-weight: 500;
+}
+.developer-name{
+	background-color: #2b2f32;
+	color: #ead61e;
+	padding: 5px
+}
+
+
+.ywcolr{
+	color: #ead61e;
+}
+
+
+
+ .row-scroll {
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+ .multi-card {
+     display: inline-block;
+     width: 300px;
+     margin-right: 2px;
+ }
+ .multi-card-title{
+ 	font-size: 15px
+ }
+ 
+ 
+ /* Custom error message  */
+ 
+ .error-template {padding: 40px 15px;text-align: center;}
+.error-actions {margin-top:15px;margin-bottom:15px;}
+.error-actions .btn { margin-right:10px; }
+ 
+ /* EndingCustom error message  */
+.cartQuantityInput{
+	font-weight: 500;
+	width: 3rem;
+}

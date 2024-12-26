@@ -1,0 +1,10 @@
+
+
+@media only screen and (max-width: 767px) {
+	.navbar-toggler{
+		color: white;
+	}
+	.nav-link{
+		color: black;
+	}
+}
